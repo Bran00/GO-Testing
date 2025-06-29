@@ -1,9 +1,13 @@
+// Package tax provides tax calculation utilities.
 package tax
 
-func CalculateTax(amount float64) float64 {
-    if amount >= 1000 {
-      return 10.0
-    }
+import "fmt"
 
-    return 5.0
+func CalculateTax(amount float64) float64 {
+	fmt.Println("Hello")
+	if amount >= 1000 {
+		return 10.0
+	}
+
+	return 5.0
 }
