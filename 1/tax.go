@@ -4,6 +4,10 @@ package tax
 import "time"
 
 func CalculateTax(amount float64) float64 {
+	if amount < 0 {
+		return -1
+	}
+
 	if amount == 0 {
 		return 0
 	}
